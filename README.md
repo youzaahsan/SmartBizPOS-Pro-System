@@ -1,4 +1,4 @@
-# 🏪 SmartBiz — Calculator & Business Management
+# 🏪 SmartBiz Calculator & Business Management
 
 <p align="center">
   <strong>A Practical Point-of-Sale & Small Business Management Application</strong>
