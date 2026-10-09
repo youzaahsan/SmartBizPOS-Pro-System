@@ -1,4 +1,4 @@
-# 🏪 SmartBiz Calculator & Business Management
+ <h1 align="center">🏪 SmartBiz — Calculator & Business Management</h1>
 
 <p align="center">
   <strong>A Practical Point-of-Sale & Small Business Management Application</strong>
@@ -24,107 +24,113 @@
 
 ## 📑 Table of Contents
 
-- [📌 Overview](#-overview)
-- [✨ Features](#-features)
-- [🖥️ Screenshots and Demo](#️-screenshots-and-demo)
-- [🛠️ Technology Stack](#️-technology-stack)
-- [🏗️ Architecture and Workflow](#️-architecture-and-workflow)
-- [📂 Project Structure](#-project-structure)
-- [📋 Prerequisites](#-prerequisites)
-- [🚀 Installation and Setup](#-installation-and-setup)
-- [🔐 Environment Variables and Configuration](#-environment-variables-and-configuration)
-- [▶️ Running the Application](#️-running-the-application)
-- [📖 Usage Guide](#-usage-guide)
-- [💾 Data and Persistence](#-data-and-persistence)
-- [👤 Roles and Permissions](#-roles-and-permissions)
-- [🛡️ Security and Privacy](#️-security-and-privacy)
-- [🧪 Testing and Code Quality](#-testing-and-code-quality)
-- [☁️ Deployment](#️-deployment)
-- [🔧 Troubleshooting](#-troubleshooting)
-- [⚠️ Current Status and Limitations](#️-current-status-and-limitations)
-- [🗺️ Roadmap](#️-roadmap)
-- [📚 Additional Documentation](#-additional-documentation)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
-- [👨‍💻 Developer](#-developer)
+* [📌 Overview](#-overview)
+* [✨ Features](#-features)
+* [🖥️ Screenshots and Demo](#️-screenshots-and-demo)
+* [🛠️ Technology Stack](#️-technology-stack)
+* [🏗️ Architecture and Workflow](#️-architecture-and-workflow)
+* [📂 Project Structure](#-project-structure)
+* [📋 Prerequisites](#-prerequisites)
+* [🚀 Installation and Setup](#-installation-and-setup)
+* [🔐 Environment Variables and Configuration](#-environment-variables-and-configuration)
+* [▶️ Running the Application](#️-running-the-application)
+* [📖 Usage Guide](#-usage-guide)
+* [💾 Data and Persistence](#-data-and-persistence)
+* [👤 Roles and Permissions](#-roles-and-permissions)
+* [🛡️ Security and Privacy](#️-security-and-privacy)
+* [🧪 Testing and Code Quality](#-testing-and-code-quality)
+* [☁️ Deployment](#️-deployment)
+* [🔧 Troubleshooting](#-troubleshooting)
+* [⚠️ Current Status and Limitations](#️-current-status-and-limitations)
+* [🗺️ Roadmap](#️-roadmap)
+* [📚 Additional Documentation](#-additional-documentation)
+* [🤝 Contributing](#-contributing)
+* [📄 License](#-license)
+* [👨‍💻 Developer](#-developer)
 
 ---
 
 ## 📌 Overview
 
-**SmartBiz Calculator & Business Management** is a browser-based, single-page application designed to simplify everyday operations for shopkeepers and small retail businesses.
+**SmartBiz — Calculator & Business Management** is a browser-based, single-page application designed to simplify everyday operations for shopkeepers and small retail businesses.
 
 Traditional small businesses often rely on separate calculators, paper-based credit registers, stock books, and manual expense records. SmartBiz brings these workflows together in one interface.
 
-With SmartBiz, users can:
+### What SmartBiz Offers
 
-- 🧮 Perform business calculations, markup calculations, and GST operations.
-- 🧾 Create bills and manage point-of-sale transactions.
-- 👥 Maintain customer records and track outstanding *Udhar* balances.
-- 📦 Manage products, inventory, and stock adjustments.
-- 🚚 Record supplier purchases.
-- ↩️ Process sales returns.
-- 💰 Track operating expenses.
-- 📊 Review business summaries, profit and loss, and outstanding balances.
-- 💾 Export and restore supported business data using JSON backups.
+* 🧮 Business calculations, markup calculations, and GST operations.
+* 🧾 Quick sales, billing, and point-of-sale transactions.
+* 👥 Customer records and outstanding *Udhar* balances.
+* 📦 Product and inventory management.
+* 🚚 Supplier purchase records.
+* ↩️ Sales return workflows.
+* 💰 Operating expense tracking.
+* 📊 Business summaries and financial reports.
+* 💾 JSON data backup and restoration.
+* 🖨️ Printable receipts and reports.
+* 📱 WhatsApp sharing links and QR payment image generation.
 
 **Intended users:** Shopkeepers and small retail businesses, particularly those following Pakistani retail conventions.
 
-The default demo data uses Pakistani Rupees (PKR), *Udhar* terminology, and WhatsApp/EasyPaisa-related payment conventions.
+The default demonstration data uses Pakistani Rupees (PKR), *Udhar* terminology, and WhatsApp/EasyPaisa-related payment conventions.
 
-> **Project status:** Working frontend prototype with seeded demo data. All application data is stored in the browser. Backend services, cloud synchronization, production-ready authentication, and automated tests are not implemented.
+> **Project status:** SmartBiz is a frontend prototype with seeded demo data. Its application data is stored in the browser. A production backend, cloud synchronization, secure authentication, and automated tests are not currently implemented.
 
 ## ✨ Features
 
 ### 🧮 1. Smart Business Calculator
 
-The Smart Calculator provides everyday arithmetic and retail calculation tools.
+The calculator provides everyday arithmetic and retail calculation tools.
 
-- Standard arithmetic with keyboard and on-screen input.
-- Markup (MU) calculations.
-- GST addition and removal with a configurable rate.
-- Memory functions: M+, M−, and MRC.
-- Grand Total (GT) recall.
-- Calculation history with category tags.
-- Favorites, search, and category filtering.
-- Favorite products shortcut bar.
-- Convert a calculation into a bill.
-- Save a calculation to a customer through the Billing workflow.
+* Standard arithmetic using keyboard and on-screen input.
+* Markup (MU) calculations.
+* GST addition and removal with a configurable rate.
+* Memory functions: M+, M−, and MRC.
+* Grand Total (GT) recall.
+* Calculation history with category tags.
+* Favorites, search, and category filtering.
+* Favorite-products shortcut bar.
+* Transfer a calculation into a bill.
+* Save a calculation to a customer through the billing workflow.
 
 ### 🧾 2. Quick Sale & Point of Sale
 
 SmartBiz supports quick checkout as well as detailed billing.
 
 **Quick Sale**
-- Single-screen checkout for walk-in customers.
-- Payment method selection.
-- Quick transaction entry.
+
+* Single-screen checkout for walk-in customers.
+* Payment method selection.
+* Quick transaction entry.
 
 **Billing / POS**
-- Multi-item shopping cart.
-- Product search by name, SKU, or barcode text.
-- Per-item and bill-level discounts.
-- Configurable tax rate.
-- Customer selection.
-- Paid amount entry.
-- Automatic `paid`, `partial`, or `unpaid` invoice status.
-- Invoice list with status filtering.
+
+* Multi-item shopping cart.
+* Product search by name, SKU, or barcode text.
+* Per-item and bill-level discounts.
+* Configurable tax rate.
+* Customer selection.
+* Paid amount entry.
+* Automatic `paid`, `partial`, or `unpaid` invoice status.
+* Invoice list with status filtering.
 
 Supported payment methods in the data model include:
 
-- Cash
-- Card
-- QR-based payment
-- Bank transfer
-- Credit
+* Cash
+* Card
+* QR-based payment
+* Bank transfer
+* Credit
+
+> Payment-method options in the application do not by themselves establish a live payment gateway integration.
 
 ### 🧾 3. Printable Receipts & Sharing
 
-- Generate printable receipts through the browser print dialog.
-- Choose 58 mm, 80 mm, or A4 receipt paper in Settings.
-- Share receipt information through a WhatsApp link.
-- Generate QR payment images using the configured payment identifier.
-- Configure the store's invoice prefix and receipt footer.
+* Generate printable receipts through the browser print dialog.
+* Configure 58 mm, 80 mm, or A4 receipt paper in Settings.
+* Share receipt information through a WhatsApp link.
+* Generate QR payment images using a configured payment identifier.
+* Configure the store's invoice prefix and receipt footer.
 
 Invoice numbers follow the configured prefix and count-based numbering scheme. The default prefix is `SB-`.
 
@@ -132,137 +138,139 @@ Invoice numbers follow the configured prefix and count-based numbering scheme. T
 
 Keep customer information and credit transactions organized.
 
-- Customer directory and records.
-- Outstanding balance tracking.
-- Customer ledger entries.
-- Payment settlement.
-- Credit sale tracking.
-- WhatsApp payment reminder links.
+* Customer directory and records.
+* Outstanding balance tracking.
+* Customer ledger entries.
+* Payment settlement.
+* Credit sale tracking.
+* WhatsApp payment reminder links.
 
-These features are particularly useful for small shops that allow customers to pay later.
+These features are designed for small shops that allow customers to pay later.
 
 ### 📦 5. Products & Inventory Management
 
 Manage product information and available stock.
 
-- Product name and SKU.
-- Barcode field.
-- Unit and category.
-- Purchase, retail, wholesale, and special prices.
-- Available stock and minimum stock levels.
-- Product tax rate.
-- Favorite product flag.
-- Stock adjustment transactions.
-- Damaged-stock write-off reason.
+* Product name and SKU.
+* Barcode field.
+* Unit and category.
+* Purchase, retail, wholesale, and special prices.
+* Available stock and minimum stock levels.
+* Product tax rate.
+* Favorite-product flag.
+* Stock adjustment transactions.
+* Damaged-stock write-off reason.
 
 ### 🚚 6. Supplier & Purchase Management
 
-- Maintain supplier records.
-- Create and manage purchase records.
-- Record supplier purchases.
-- Update product stock through purchase workflows.
-- Review supplier-related business information.
+* Maintain supplier records.
+* Create and manage purchase records.
+* Record supplier purchases.
+* Update product stock through purchase workflows.
+* Review supplier-related business information.
 
 ### ↩️ 7. Sales Returns
 
-- Process supported sale return workflows.
-- Choose whether returned stock is restocked.
-- Select a cash refund or credit adjustment.
-- Maintain return-related records.
+* Process supported sales-return workflows.
+* Choose whether returned stock is restocked.
+* Select a cash refund or credit adjustment.
+* Maintain return-related records.
 
 ### 💰 8. Expense Management
 
-- Record business expenses.
-- Organize expenses by category.
-- Review operating expense information.
-- Include supported expense data in business reporting.
+* Record business expenses.
+* Organize expenses by category.
+* Review operating expense information.
+* Include supported expense data in business reporting.
 
 ### 📊 9. Dashboard & Business Reports
 
 The dashboard and reporting screens help users review business activity.
 
-Available reporting features include:
+* Dashboard key performance indicators.
+* Seven-day area chart.
+* Pie chart visualizations.
+* Profit and Loss report.
+* Daily business summary.
+* Customer dues report.
+* Supplier dues report.
+* Best-selling products report.
+* Cashier performance report.
+* CSV export.
+* Report printing.
 
-- Dashboard key performance indicators.
-- Seven-day area chart.
-- Pie chart visualization.
-- Profit and Loss report.
-- Daily business summary.
-- Customer dues report.
-- Supplier dues report.
-- Best-selling products report.
-- Cashier performance report.
-- CSV export.
-- Print support for reports.
-
-Reports reflect the data currently stored in the application; they are not backed by a centralized server.
+Reports use the data currently stored in the application; they are not backed by a centralized server.
 
 ### ⚙️ 10. Settings & Data Management
 
-- Store profile configuration.
-- Currency settings.
-- Invoice prefix.
-- Receipt footer.
-- Receipt paper size.
-- Payment identifier.
-- Sound feedback toggle.
-- Staff list interface.
-- JSON backup export and restore.
-- Activity log entries for key transactions.
+* Store profile configuration.
+* Currency settings.
+* Invoice prefix.
+* Receipt footer.
+* Receipt paper size.
+* Payment identifier.
+* Sound feedback toggle.
+* Staff list interface.
+* JSON backup export and restore.
+* Activity log entries for key transactions.
 
-The application can also use the browser Web Audio API to provide synthesized sound feedback.
+The application can use the browser Web Audio API to provide synthesized sound feedback.
 
 ## 🖥️ Screenshots and Demo
 
-Screenshots and a live demo URL have not been provided for this repository.
+Screenshots and a verified live demo URL have not been provided.
 
-To document the interface, add screenshots to a folder such as `docs/screenshots/` and reference them here.
+To showcase the interface, add screenshots to `docs/screenshots/` and reference them here.
 
-Suggested screenshots:
+| Screenshot              | Suggested file                    |
+| ----------------------- | --------------------------------- |
+| Dashboard               | `docs/screenshots/dashboard.png`  |
+| Smart Calculator        | `docs/screenshots/calculator.png` |
+| Billing / POS           | `docs/screenshots/billing.png`    |
+| Customer & Udhar Ledger | `docs/screenshots/customers.png`  |
+| Inventory               | `docs/screenshots/inventory.png`  |
+| Business Reports        | `docs/screenshots/reports.png`    |
 
-| Screenshot | Suggested file |
-|---|---|
-| Dashboard | `docs/screenshots/dashboard.png` |
-| Smart Calculator | `docs/screenshots/calculator.png` |
-| Billing / POS | `docs/screenshots/billing.png` |
-| Customer & Udhar Ledger | `docs/screenshots/customers.png` |
-| Inventory | `docs/screenshots/inventory.png` |
-| Business Reports | `docs/screenshots/reports.png` |
+Once the images exist in the repository, display them using Markdown image syntax:
 
-Once the files exist, display them using standard Markdown image syntax.
+```md
+![SmartBiz Dashboard](docs/screenshots/dashboard.png)
+```
+
+**Live Demo:** Add a verified deployment URL here when one is available.
 
 ## 🛠️ Technology Stack
 
-| Category | Technology | Purpose |
-|---|---|---|
-| Language | TypeScript | Type-safe application development |
-| UI Library | React 19 | Component-based interface |
-| Build Tool | Vite | Development server and production builds |
-| Styling | Tailwind CSS 4 | Application styling |
-| Icons | Lucide React | Interface icons |
-| Charts | Recharts | Dashboard visualizations |
-| Data Persistence | Browser LocalStorage | Local data storage |
-| Browser APIs | Web Audio API | Optional sound feedback |
-| Printing | `window.print()` | Receipt and report printing |
-| Sharing | WhatsApp links | Receipt sharing and reminders |
-| Package Management | npm / Bun | Dependency installation |
+| Category           | Technology           | Purpose                                  |
+| ------------------ | -------------------- | ---------------------------------------- |
+| Language           | TypeScript           | Type-safe application development        |
+| UI Library         | React 19             | Component-based interface                |
+| Build Tool         | Vite                 | Development server and production builds |
+| Styling            | Tailwind CSS 4       | Application styling                      |
+| Icons              | Lucide React         | Interface icons                          |
+| Charts             | Recharts             | Dashboard visualizations                 |
+| Data Persistence   | Browser LocalStorage | Local data storage                       |
+| Browser API        | Web Audio API        | Optional sound feedback                  |
+| Printing           | `window.print()`     | Receipt and report printing              |
+| Sharing            | WhatsApp links       | Receipt sharing and reminders            |
+| Package Management | npm / Bun            | Dependency installation                  |
 
 ### 📦 Dependencies Worth Reviewing
 
-The following dependencies are declared but are not imported by the application's `src/` files according to the supplied project review:
+The project review indicates that the following dependencies are declared but are not imported by the application's `src/` files:
 
-- `@google/genai`
-- `express`
-- `dotenv`
-- `motion`
+* `@google/genai`
+* `express`
+* `dotenv`
+* `motion`
 
-They may be reserved for future development or removable after confirming that no external scripts or configuration require them.
+They may be reserved for future development or removable after confirming that no external scripts or configuration depend on them.
 
 The current application does not call Gemini or run an Express backend.
 
 ## 🏗️ Architecture and Workflow
 
-SmartBiz currently follows a client-side React architecture.
+SmartBiz follows a client-side React architecture.
 
 Screen components interact with context providers. The database engine manages browser LocalStorage operations and notifies subscribers when collections change.
 
@@ -272,6 +280,280 @@ Screen components interact with context providers. The database engine manages b
 flowchart TD
     UI["Screen Components"] --> Auth["AuthContext"]
     UI --> DbCtx["DbContext"]
+    Auth --> Engine["DatabaseEngine"]
+    DbCtx --> Engine
+    Engine --> LS[("Browser LocalStorage")]
+    Engine --> Notify["Collection Change Notifications"]
+    Notify --> DbCtx
+```
+
+### Sales Transaction Workflow
+
+The invoice creation workflow coordinates supported business operations.
+
+```mermaid
+flowchart TD
+    A["Calculator / Quick Sale / Billing"] --> B["createInvoice"]
+    B --> C["Update Product Stock"]
+    B --> D["Calculate Cost and Profit"]
+    B --> E["Record Customer Due"]
+    B --> F["Write Activity Log"]
+    B --> G["Receipt / WhatsApp / QR"]
+```
+
+### Core Data Operations
+
+The database engine in `src/services/db.ts` includes transaction-related methods such as:
+
+* `createInvoice`
+* `recordCustomerPayment`
+* `createPurchase`
+* `processReturn`
+* `adjustStock`
+
+Data management helpers include:
+
+* `exportBackup`
+* `importBackup`
+* `resetToDefaults`
+
+These methods operate on local browser data rather than a remote database.
+
+## 📂 Project Structure
+
+The main application files are organized by feature.
+
+```text
+SmartBiz/
+├── index.html
+├── package.json
+├── vite.config.ts
+├── tsconfig.json
+├── bun.lock
+├── metadata.json
+├── .env.example
+├── public/
+│   └── assets/
+│       └── aistudio/
+└── src/
+    ├── main.tsx
+    ├── App.tsx
+    ├── index.css
+    ├── types/
+    │   └── index.ts
+    ├── services/
+    │   └── db.ts
+    ├── context/
+    │   ├── AuthContext.tsx
+    │   └── DbContext.tsx
+    └── components/
+        ├── auth/
+        ├── layout/
+        ├── dashboard/
+        ├── calculator/
+        ├── pos/
+        ├── customers/
+        ├── products/
+        ├── inventory/
+        ├── purchases/
+        ├── returns/
+        ├── expenses/
+        ├── reports/
+        └── settings/
+```
+
+### Important Files
+
+| File                          | Responsibility                                     |
+| ----------------------------- | -------------------------------------------------- |
+| `src/main.tsx`                | React application entry point                      |
+| `src/App.tsx`                 | Main navigation and calculator-to-billing handoff  |
+| `src/index.css`               | Tailwind import and print styles                   |
+| `src/types/index.ts`          | Domain types                                       |
+| `src/services/db.ts`          | Local database engine, seed data, and transactions |
+| `src/context/AuthContext.tsx` | Current user, role permissions, and settings       |
+| `src/context/DbContext.tsx`   | Data access, sound effects, and backup helpers     |
+| `vite.config.ts`              | Vite plugins and configuration                     |
+| `package.json`                | Dependencies and npm scripts                       |
+
+## 📋 Prerequisites
+
+Before running SmartBiz, install:
+
+* **Node.js:** A supported LTS release compatible with the project's Vite and Tailwind CSS toolchain.
+* **npm:** Included with Node.js.
+* **Git:** Recommended for cloning and version control.
+* **Modern browser:** Chrome, Edge, Firefox, or another compatible browser.
+
+Bun can also be used because the repository includes a `bun.lock` file.
+
+The repository information supplied for this README does not establish an exact Node.js version. Confirm compatibility on your development machine.
+
+## 🚀 Installation and Setup
+
+### 1. Clone the Repository
+
+Replace the placeholder with the actual GitHub repository URL.
+
+```bash
+git clone <repository-url>
+```
+
+### 2. Navigate to the Project
+
+```bash
+cd <project-folder>
+```
+
+Use the directory name created when cloning the repository.
+
+### 3. Install Dependencies
+
+Using npm:
+
+```bash
+npm install
+```
+
+Or using Bun:
+
+```bash
+bun install
+```
+
+### 4. Start the Development Server
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in the terminal. The current Vite configuration uses port `3000` and listens on `0.0.0.0`.
+
+### 5. Build for Production
+
+```bash
+npm run build
+```
+
+Vite generates the production build in the `dist/` directory.
+
+## 🔐 Environment Variables and Configuration
+
+The project contains an `.env.example` file, but the supplied code review indicates that its declared variables are not currently consumed by `src/` or `vite.config.ts`.
+
+| Variable         | Declared purpose | Currently used by application code? |
+| ---------------- | ---------------- | ----------------------------------- |
+| `GEMINI_API_KEY` | Gemini API key   | No                                  |
+| `APP_URL`        | Hosting URL      | No                                  |
+
+The Vite configuration also reads `DISABLE_HMR`, which can be set to `true` to disable hot-module replacement and file watching in the relevant development environment.
+
+No environment file is required for the current local application.
+
+**Security reminder:** Never commit real credentials, tokens, or API keys to GitHub.
+
+Business settings—including store name, currency, invoice prefix, tax rate, receipt paper size, and payment identifier—are configured through the Settings screen and stored locally.
+
+## ▶️ Running the Application
+
+Available npm scripts, according to the supplied project information:
+
+| Command           | Description                                               |
+| ----------------- | --------------------------------------------------------- |
+| `npm run dev`     | Start the Vite development server                         |
+| `npm run build`   | Generate the production build                             |
+| `npm run preview` | Preview the production build locally                      |
+| `npm run lint`    | Run TypeScript checking using `tsc --noEmit`              |
+| `npm run clean`   | Remove configured build output and `server.js` if present |
+
+The `lint` script is a TypeScript check, not a full ESLint run.
+
+The project is client-only; a separate Express server is not currently part of the running application.
+
+## 📖 Usage Guide
+
+On first load, SmartBiz initializes demonstration data for **Al-Madina Smart Superstore**, including sample products, customers, suppliers, expenses, and calculations.
+
+### Main Application Sections
+
+| Section              | Purpose                                                     |
+| -------------------- | ----------------------------------------------------------- |
+| 📊 Dashboard         | Review business figures, charts, and shortcuts              |
+| 🧮 Calculator        | Perform calculations and transfer amounts to billing        |
+| 🧾 Quick Sale        | Complete a walk-in sale                                     |
+| 🛒 Billing / POS     | Create invoices and manage payment status                   |
+| 👥 Customers & Udhar | View customer balances, ledgers, and settlements            |
+| 📦 Products          | Manage product details and prices                           |
+| 🏬 Inventory         | Adjust stock and record damaged goods                       |
+| 🚚 Purchases         | Manage supplier and purchase records                        |
+| ↩️ Returns           | Process supported sales returns                             |
+| 💰 Expenses          | Record and review operating expenses                        |
+| 📈 Reports           | Review reports, export CSV files, and print                 |
+| ⚙️ Settings          | Configure the store, receipts, staff interface, and backups |
+
+Use the user control in the application header to open the role switcher and select one of the seeded Admin, Manager, or Cashier roles.
+
+These roles are demonstration features, not secure authentication.
+
+## 💾 Data and Persistence
+
+SmartBiz stores application data in the browser's LocalStorage.
+
+### Storage Keys
+
+Collections use keys following this general pattern:
+
+```text
+smartbiz_biz_main_<collection>
+```
+
+Additional keys include:
+
+```text
+smartbiz_initialized
+smartbiz_sound
+```
+
+### Main Collections
+
+* `settings`
+* `users`
+* `products`
+* `customers`
+* `suppliers`
+* `customerLedger`
+* `expenses`
+* `invoices`
+* `purchases`
+* `returns`
+* `calculations`
+* `inventoryTransactions`
+* `activityLogs`
+* `paymentReminders`
+
+### Backup and Restore
+
+1. Open **Settings**.
+2. Navigate to the Backup & Restore area.
+3. Download a JSON backup.
+4. Store the backup somewhere safe.
+5. Use the restore option to import a supported backup when needed.
+
+> **Important:** Restoring a backup overwrites the collections included in the file. Collections missing from the backup are left unchanged. The current import validation checks for a `data` object and should not be treated as comprehensive validation of untrusted files.
+
+Because data is stored locally, clearing browser storage can permanently remove business records. Different browsers, profiles, and devices do not automatically share the same data.
+
+## 👤 Roles and Permissions
+
+The application defines three demonstration roles: Admin, Manager, and Cashier.
+
+| Permission         |  Admin  |   Manager   |   Cashier   |
+| ------------------ | :-----: | :---------: | :---------: |
+| Create sales       |    ✅    |      ✅      |      ✅      |
+| Give discounts     |    ✅    |      ✅      |      ✅      |
+| Record payments    |    ✅    |      ✅      |      ✅      |
+| Manage customers   |    ✅    |      ✅      |      ✅      |
+| Cancel sales       | Defined |   Definedontext"]
     Auth --> Engine["DatabaseEngine"]
     DbCtx --> Engine
     Engine --> LS[("Browser LocalStorage")]
