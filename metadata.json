@@ -1,0 +1,6 @@
+{
+  "name": "SmartBiz Calculator & Business Management",
+  "description": "Professional Smart Calculator, POS, Billing, Inventory, Customer Ledger, Udhar & Business Analytics for shopkeepers and small businesses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
